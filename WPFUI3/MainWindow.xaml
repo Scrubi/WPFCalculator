@@ -1,0 +1,64 @@
+﻿<Window x:Class="WPFUI3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFUI3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <!-- Laskin -->
+        <TextBlock Grid.Column="3" Grid.Row="1" FontSize="32" FontWeight="Bold" Text="Calculator Example" HorizontalAlignment="Center"/>
+        <!-- Yhteenlasku -->
+        <TextBlock Grid.Column="1" Grid.Row="3" FontSize="14" FontWeight="SemiBold" Text="Yhteenlasku:"/>
+        <TextBox Name="yhteen1" Grid.Column="3" Grid.Row="3" Width="100" HorizontalAlignment="Left"/>
+        <TextBlock Grid.Column="3" Grid.Row="3" Text="+" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Name="yhteen2" Grid.Column="3" Grid.Row="3" Width="100" HorizontalAlignment="Right"/>
+        <!-- Vähennyslasku -->
+        <TextBlock Grid.Column="1" Grid.Row="6" FontSize="14" FontWeight="SemiBold" Text="Vähennyslaskus:"/>
+        <TextBox Name="ero1" Grid.Column="3" Grid.Row="6" Width="100" HorizontalAlignment="Left"/>
+        <TextBlock Grid.Column="3" Grid.Row="6" Text="-" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Name="ero2" Grid.Column="3" Grid.Row="6" Width="100" HorizontalAlignment="Right"/>
+        <!-- Kertolasku -->
+        <TextBlock Grid.Column="1" Grid.Row="9" FontSize="14" FontWeight="SemiBold" Text="Kertolasku:"/>
+        <TextBox Name="tulo1" Grid.Column="3" Grid.Row="9" Width="100" HorizontalAlignment="Left"/>
+        <TextBlock Grid.Column="3" Grid.Row="9" Text="*" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Name="tulo2" Grid.Column="3" Grid.Row="9" Width="100" HorizontalAlignment="Right"/>
+        <!-- Jakolasku -->
+        <TextBlock Grid.Column="1" Grid.Row="12" FontSize="14" FontWeight="SemiBold" Text="Jakolasku:"/>
+        <TextBox Name="osa1" Grid.Column="3" Grid.Row="12" Width="100" HorizontalAlignment="Left"/>
+        <TextBlock Grid.Column="3" Grid.Row="12" Text="/" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Name="osa2" Grid.Column="3" Grid.Row="12" Width="100" HorizontalAlignment="Right"/>
+
+        <Button Name="submitButton" Content="Laske" FontSize="32" Grid.Column="3" Grid.Row="15" MinWidth="80" MinHeight="50" Margin="10" Click="submitButton_Click" />
+
+    </Grid>
+</Window>
